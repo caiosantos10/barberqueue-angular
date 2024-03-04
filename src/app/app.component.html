@@ -1,3 +1,9 @@
 <div class="container">
   <h1 class="text-center">BarberQueue</h1>
+  <h3>Schedules</h3> 
+
+  <div *ngFor="let schedule of schedules">
+    {{ schedule?.customer.name }}
+    {{ schedule?.barber.name }}
+  </div>
 </div>
