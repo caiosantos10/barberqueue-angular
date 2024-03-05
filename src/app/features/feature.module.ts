@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ScheduleModule } from './schedules/components/schedule-list/schedule.module';
 import { ScheduleListComponent } from './schedules/components/schedule-list/schedule.component';
+import { ScheduleService } from './schedules/services/schedule.service';
+import { CreateScheduleComponent } from './schedules/components/create-schedule/create-schedule.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ScheduleListComponent, CreateScheduleComponent],
   imports: [
-    CommonModule, ScheduleModule
+    CommonModule
   ],
+  providers: [ScheduleService],
   exports: [ScheduleListComponent]
 })
 export class FeatureModule { }
