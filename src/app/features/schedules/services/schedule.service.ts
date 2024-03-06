@@ -3,7 +3,9 @@ import { environment } from "../../../../enviroments/enviroment";
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ 
+    providedIn: 'root' 
+})
 export class ScheduleService {
     readonly BASE_URL = environment.apiUrl;
 

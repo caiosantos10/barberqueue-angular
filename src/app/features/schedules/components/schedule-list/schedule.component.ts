@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { ScheduleService } from '../../services/schedule.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-schedule-list',
-  standalone: false,
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './schedule-list.component.html',
   styleUrl: './schedule-list.component.scss'
 })
