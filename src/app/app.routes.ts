@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { ScheduleListComponent } from './features/schedules/components/schedule-list/schedule.component';
 import { CreateScheduleComponent } from './features/schedules/components/create-schedule/create-schedule.component';
-import { DashboardComponent } from './features/dashboard/dashboard.component';
+import { DashboardComponent } from './core/components/dashboard/dashboard.component';
 
 export const routes: Routes = [
     { path: 'home', component: DashboardComponent }, 
