@@ -6,7 +6,7 @@ import { DashboardComponent } from './core/components/dashboard/dashboard.compon
 export const routes: Routes = [
     { path: 'home', component: DashboardComponent }, 
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'agenda', component: ScheduleListComponent }, 
+    { path: 'horarios', component: ScheduleListComponent }, 
     { path: 'marcar-hora', component: CreateScheduleComponent},
     { path: '**', component: DashboardComponent}
 ];
