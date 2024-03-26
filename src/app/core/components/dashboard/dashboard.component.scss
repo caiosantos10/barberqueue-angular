@@ -7,8 +7,22 @@
         align-items: center;
     }
 
-    &--title {
-        font-family: 'Oswald';
-        color: #fff;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 3rem;
+
+        img {
+            height: 15rem;
+            width: 15rem;
+        }
+        &--title {
+            position: absolute;
+            bottom: 0;
+            font-family: 'Oswald', sans-serif;
+            color: #fff;
+        }
     }
 }
