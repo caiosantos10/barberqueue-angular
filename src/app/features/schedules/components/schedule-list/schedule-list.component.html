@@ -1,8 +1,11 @@
 <section>
     <h3>Schedules</h3>
 
-    <div *ngFor="let schedule of schedules">
-        {{ schedule?.customer.name }}
-        {{ schedule?.barber.name }}
+    <div *ngIf="schedules$ | async as schedules">
+        <ng-container *ngFor="let schedule of schedules.content">
+            <p>{{ schedule.id }}</p>
+            <p>{{ schedule.customer.name }}</p>
+            <p>{{ schedule.barber.name }}</p>
+        </ng-container>
     </div>
 </section>

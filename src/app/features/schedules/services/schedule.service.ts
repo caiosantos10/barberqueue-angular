@@ -14,5 +14,4 @@ export class ScheduleService {
     public getSchedules(): Observable<any> {
         return this.http.get(`${this.BASE_URL}/schedules`);
     }
-
 }

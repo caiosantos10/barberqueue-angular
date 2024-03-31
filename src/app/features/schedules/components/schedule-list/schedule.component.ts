@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { ScheduleService } from '../../services/schedule.service';
 import { CommonModule } from '@angular/common';
+import { Observable } from 'rxjs';
+import { Schedule } from '../../../interfaces/schedule.interface';
+import { Response } from '../../../interfaces/response.interface';
 
 @Component({
   selector: 'app-schedule-list',
@@ -10,19 +13,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './schedule-list.component.scss'
 })
 export class ScheduleListComponent {
-
-  schedules: Array<any> = [];
+  schedules$!: Observable<Response<Schedule>>;
 
   constructor(private scheduleService: ScheduleService) { }
 
   ngOnInit() {
-    this.getSchedules()
+    this._initSchedules()
   }
 
-  private getSchedules() {
-    this.scheduleService.getSchedules().subscribe(res => {
-      this.schedules = res;
-    });
+  private _initSchedules() {
+    this.schedules$ = this.scheduleService.getSchedules();
   }
 
 }
