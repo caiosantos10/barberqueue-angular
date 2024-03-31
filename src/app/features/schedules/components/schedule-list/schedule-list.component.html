@@ -1,11 +1,28 @@
 <section>
     <h3>Schedules</h3>
 
-    <div *ngIf="schedules$ | async as schedules">
-        <ng-container *ngFor="let schedule of schedules.content">
-            <p>{{ schedule.id }}</p>
-            <p>{{ schedule.customer.name }}</p>
-            <p>{{ schedule.barber.name }}</p>
-        </ng-container>
-    </div>
+    <table class="table table-striped table-dark" *ngIf="schedules$ | async as schedules">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">CLIENTE</th>
+                <th scope="col">INÍCIO</th>
+                <th scope="col">TÉRMINO</th>
+                <th scope="col">BARBEIRO</th>
+                <th scope="col">SERVIÇOS</th>
+                <th scope="col">ATIVO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let schedule of schedules.content">
+                <th scope="row">{{ schedule.id }}</th>
+                <td>{{ schedule.customer.name }}</td>
+                <td>{{ schedule.initialTime | date:'HH:mm - dd/MM/yy' }}</td>
+                <td>{{ schedule.endTime | date:'HH:mm - dd/MM/yy' }}</td>
+                <td>{{ schedule.barber.name }}</td>
+                <td>{{ schedule.services }}</td>
+                <td>{{ schedule.isActive ? 'SIM' : 'NÃO' }}</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
