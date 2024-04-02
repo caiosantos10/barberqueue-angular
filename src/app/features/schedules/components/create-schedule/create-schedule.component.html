@@ -1,65 +1,51 @@
 <section>
-    <h3>Agendar Horário</h3>
+    <h3>Marque seu horário</h3>
     <form>
         <div class="form-row">
             <div class="form-group col-md-4">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Informe seu nome">
-                </div>
+                <my-input label="Nome" placeholder="Informe seu nome" inputType="text"></my-input>
             </div>
             <div class="form-group col-md-4">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
+                <my-input label="Email" placeholder="emailexamplo@exemplo.com" type="email"></my-input>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
-                <div class="mb-3">
-                    <label for="inputTime">Horário</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option hidden>Selecione o horário</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
+                <label for="inputTime">Horário</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option hidden>Selecione o horário</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
             <div class="form-group col-md-4">
-                <div class="mb-3">
-                    <label for="inputTime">Barbeiro</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option hidden>Selecione o barbeiro</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="form-group col-md-4">
-            <div class="mb-3">
-                <label for="inputTime">Serviços</label>
+                <label for="inputTime">Barbeiro</label>
                 <select class="form-select" aria-label="Default select example">
-                    <option hidden>Selecione os serviços</option>
-                    <option value="1">Cabelo</option>
-                    <option value="2">Barba</option>
-                    <option value="3">Sobrancelha</option>
+                    <option hidden>Selecione o barbeiro</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
                 </select>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-4">
+            <label for="inputTime">Serviços</label>
+            <select class="form-select" aria-label="Default select example">
+                <option hidden>Selecione os serviços</option>
+                <option value="1">Cabelo</option>
+                <option value="2">Barba</option>
+                <option value="3">Sobrancelha</option>
+            </select>
+        </div>
+        <!-- <div class="form-group">
             <div class="form-check">
                 <label class="form-check-label" for="gridCheck">
                     Ativo?
                 </label>
                 <input class="form-check-input" type="checkbox" id="gridCheck">
             </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        </div> -->
+        <button type="submit" class="btn btn-primary">Marcar</button>
     </form>
 </section>
