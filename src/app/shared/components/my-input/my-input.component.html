@@ -1,4 +1,7 @@
-<div class="">
-    <label for="exampleFormControlInput1" class="form-label">{{ label }}</label>
+<div class="my-input__wrapper">
+    <label [for]="label + 'formControl'" class="form-label">{{ label }}</label>
     <input [type]="type" class="form-control" [placeholder]="placeholder">
+    <div class="invalid-feedback">
+        {{ error }}
+    </div>
 </div>

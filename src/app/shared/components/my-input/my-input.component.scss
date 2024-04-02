@@ -1,0 +1,9 @@
+.my-input {
+    &__wrapper {
+        margin-bottom: 1rem;
+
+        .invalid-feedback {
+            display: block;
+        }
+    }
+}
