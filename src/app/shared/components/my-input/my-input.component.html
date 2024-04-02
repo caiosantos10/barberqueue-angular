@@ -1,7 +1,7 @@
 <div class="my-input__wrapper">
     <label [for]="label + 'formControl'" class="form-label">{{ label }}</label>
     <input [type]="type" class="form-control" [placeholder]="placeholder">
-    <div class="invalid-feedback">
+    <div class="invalid-feedback" [ngClass]="{ 'show' : error.length > 0}">
         {{ error }}
     </div>
 </div>

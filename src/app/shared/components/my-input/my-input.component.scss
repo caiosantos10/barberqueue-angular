@@ -2,8 +2,12 @@
     &__wrapper {
         margin-bottom: 1rem;
 
-        .invalid-feedback {
-            display: block;
+        .show {
+            display: block !important;
+        }
+
+        input::placeholder {
+            color: var(--bs-gray-500);
         }
     }
 }
