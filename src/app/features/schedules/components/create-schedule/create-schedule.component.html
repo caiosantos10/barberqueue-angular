@@ -3,15 +3,15 @@
     <form>
         <div class="form-row">
             <div class="form-group col-md-4">
-                <my-input label="Nome" placeholder="Informe seu nome" inputType="text"></my-input>
+                <my-input label="Nome" placeholder="Informe seu nome" inputType="text" error="Informe seu nome"></my-input>
             </div>
             <div class="form-group col-md-4">
-                <my-input label="Email" placeholder="emailexamplo@exemplo.com" type="email"></my-input>
+                <my-input label="Email" placeholder="emailexamplo@exemplo.com" type="email" error="Informe seu email"></my-input>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
-                <label for="inputTime">Horário</label>
+                <label class="form-label" for="inputTime">Horário</label>
                 <select class="form-select" aria-label="Default select example">
                     <option hidden>Selecione o horário</option>
                     <option value="1">One</option>
@@ -20,7 +20,7 @@
                 </select>
             </div>
             <div class="form-group col-md-4">
-                <label for="inputTime">Barbeiro</label>
+                <label class="form-label" for="inputTime">Barbeiro</label>
                 <select class="form-select" aria-label="Default select example">
                     <option hidden>Selecione o barbeiro</option>
                     <option value="1">One</option>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="form-group col-md-4">
-            <label for="inputTime">Serviços</label>
+            <label class="form-label" for="inputTime">Serviços</label>
             <select class="form-select" aria-label="Default select example">
                 <option hidden>Selecione os serviços</option>
                 <option value="1">Cabelo</option>
