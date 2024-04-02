@@ -2,46 +2,62 @@
     <h3>Agendar Horário</h3>
     <form>
         <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
+            <div class="form-group col-md-4">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Informe seu nome">
+                </div>
             </div>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
             </div>
-            <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <div class="mb-3">
+                    <label for="inputTime">Horário</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option hidden>Selecione o horário</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-md-4">
+                <div class="mb-3">
+                    <label for="inputTime">Barbeiro</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option hidden>Selecione o barbeiro</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-4">
+            <div class="mb-3">
+                <label for="inputTime">Serviços</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option hidden>Selecione os serviços</option>
+                    <option value="1">Cabelo</option>
+                    <option value="2">Barba</option>
+                    <option value="3">Sobrancelha</option>
+                </select>
             </div>
         </div>
         <div class="form-group">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
-                    Check me out
+                    Ativo?
                 </label>
+                <input class="form-check-input" type="checkbox" id="gridCheck">
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Sign in</button>
