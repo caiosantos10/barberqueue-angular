@@ -1,44 +1,47 @@
-<section>
-    <h3>Marque seu horário</h3>
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <my-input label="Nome" placeholder="Informe seu nome" inputType="text" error="Informe seu nome"></my-input>
+<my-container>
+    <section>
+        <h3>Marque seu horário</h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <my-input label="Nome" placeholder="Informe seu nome" inputType="text"
+                        error="Informe seu nome"></my-input>
+                </div>
+                <div class="form-group col-md-4">
+                    <my-input label="Email" placeholder="emailexamplo@exemplo.com" type="email"
+                        error="Informe seu email"></my-input>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label class="form-label" for="inputTime">Horário</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option hidden>Selecione o horário</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label class="form-label" for="inputTime">Barbeiro</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option hidden>Selecione o barbeiro</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
             </div>
             <div class="form-group col-md-4">
-                <my-input label="Email" placeholder="emailexamplo@exemplo.com" type="email" error="Informe seu email"></my-input>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label class="form-label" for="inputTime">Horário</label>
+                <label class="form-label" for="inputTime">Serviços</label>
                 <select class="form-select" aria-label="Default select example">
-                    <option hidden>Selecione o horário</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option hidden>Selecione os serviços</option>
+                    <option value="1">Cabelo</option>
+                    <option value="2">Barba</option>
+                    <option value="3">Sobrancelha</option>
                 </select>
             </div>
-            <div class="form-group col-md-4">
-                <label class="form-label" for="inputTime">Barbeiro</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option hidden>Selecione o barbeiro</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group col-md-4">
-            <label class="form-label" for="inputTime">Serviços</label>
-            <select class="form-select" aria-label="Default select example">
-                <option hidden>Selecione os serviços</option>
-                <option value="1">Cabelo</option>
-                <option value="2">Barba</option>
-                <option value="3">Sobrancelha</option>
-            </select>
-        </div>
-        <!-- <div class="form-group">
+            <!-- <div class="form-group">
             <div class="form-check">
                 <label class="form-check-label" for="gridCheck">
                     Ativo?
@@ -46,6 +49,7 @@
                 <input class="form-check-input" type="checkbox" id="gridCheck">
             </div>
         </div> -->
-        <button type="submit" class="btn btn-primary">Marcar</button>
-    </form>
-</section>
+            <button type="submit" class="btn btn-primary">Marcar</button>
+        </form>
+    </section>
+</my-container>
