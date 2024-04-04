@@ -2,4 +2,32 @@
 
 body {
     font-family: "Oswald", sans-serif !important;
+
+    .my-input {
+        &__wrapper {
+            margin-bottom: 1rem;
+
+            .show {
+                display: block !important;
+            }
+
+            input::placeholder {
+                color: var(--bs-gray-500);
+            }
+        }
+    }
+
+    .my-select {
+        &__wrapper {
+            margin-bottom: 1rem;
+
+            .show {
+                display: block !important;
+            }
+
+            .ng-select .ng-select-container .ng-value-container .ng-placeholder {
+                color: var(--bs-gray-500) !important;
+            }
+        }
+    }
 }

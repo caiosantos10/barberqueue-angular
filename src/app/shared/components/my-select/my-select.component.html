@@ -1,1 +1,9 @@
-<p>my-select works!</p>
+<div class="my-select__wrapper">
+    <label class="form-label" for="inputTime">{{ label }}</label>
+    <ng-select [items]="options" [bindLabel]="label" [placeholder]="placeholder"
+        (change)="onChange($event)">
+    </ng-select>
+    <div class="invalid-feedback" [ngClass]="{ 'show' : error.length > 0}">
+        {{ error }}
+    </div>
+</div>
