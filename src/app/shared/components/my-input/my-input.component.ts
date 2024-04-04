@@ -6,8 +6,7 @@ import { FormControl } from '@angular/forms';
   selector: 'my-input',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './my-input.component.html',
-  styleUrl: './my-input.component.scss'
+  templateUrl: './my-input.component.html'
 })
 export class MyInputComponent {
   @Input() formControl!: FormControl;

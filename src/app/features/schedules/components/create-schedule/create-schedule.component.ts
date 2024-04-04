@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { MyInputComponent } from '../../../../shared/components/my-input/my-input.component';
-import { MyContainerComponent } from '../../../../shared/components/my-container/my-container.component';
-
+import { MyContainerComponent, MyInputComponent, MySelectComponent } from '../../../../shared';
 @Component({
   selector: 'app-create-schedule',
   standalone: true,
-  imports: [MyInputComponent, MyContainerComponent],
+  imports: [MyInputComponent, MySelectComponent, MyContainerComponent],
   templateUrl: './create-schedule.component.html',
   styleUrl: './create-schedule.component.scss'
 })
